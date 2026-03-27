@@ -31,11 +31,6 @@ public class Task {
     }
 
     public LocalDateTime getNextRemainder() {
-
-        if(nextRemainder == null){
-            return whenToStartNotifications;
-        }
-
         return nextRemainder;
     }
 
