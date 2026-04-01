@@ -35,7 +35,7 @@ public class Task {
     }
 
     public void setNextRemainder(LocalDateTime nextRemainder) {
-        this.nextRemainder = nextRemainder;
+        this.nextRemainder =nextRemainder;
     }
 
     public LocalDateTime getWhenToStartNotifications() {
@@ -44,6 +44,7 @@ public class Task {
 
     public void setWhenToStartNotifications(LocalDateTime whenToStartNotifications) {
         this.whenToStartNotifications = whenToStartNotifications;
+        setNextRemainder(whenToStartNotifications);
     }
 
     public int getTask_id() {
