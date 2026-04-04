@@ -36,8 +36,7 @@ public class taskShedular {
 
         LocalDateTime next =
                 task.getNextRemainder()
-                        .plusHours(task.getGapForNotifications().getHour())
-                        .plusMinutes(task.getGapForNotifications().getMinute());
+                        .plusMinutes(task.getGapForNotifications());
         if(next.isAfter(task.getDateOfTask())){
             task.setNextRemainder(null); // stop reminders
         }else{

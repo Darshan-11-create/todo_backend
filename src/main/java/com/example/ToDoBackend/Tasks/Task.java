@@ -17,7 +17,7 @@ public class Task {
 
     private LocalDateTime dateOfTask;
 
-    private LocalTime gapForNotifications;
+    private int gapForNotifications;
 
     private LocalDateTime whenToStartNotifications;
     private LocalDateTime nextRemainder;
@@ -79,11 +79,11 @@ public class Task {
         this.customer = customer;
     }
 
-    public LocalTime getGapForNotifications() {
+    public int getGapForNotifications() {
         return gapForNotifications;
     }
 
-    public void setGapForNotifications(LocalTime gapForNotifications) {
+    public void setGapForNotifications(int gapForNotifications) {
         this.gapForNotifications = gapForNotifications;
     }
 
