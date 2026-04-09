@@ -20,7 +20,7 @@ public class Task {
     private int gapForNotifications;
 
     private LocalDateTime whenToStartNotifications;
-    private LocalDateTime nextRemainder;
+    private LocalDateTime nextRemainder=whenToStartNotifications;
 
     @ManyToOne
     @JoinColumn(name="customer_id")
