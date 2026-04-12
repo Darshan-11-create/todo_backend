@@ -25,8 +25,9 @@ public class taskShedular {
         LocalDateTime now = LocalDateTime.now();
         List<Task> tasks = taskRepository.findAll();
         for(Task t:tasks){
+            System.out.println("Sending email to"+t.getTaskName());
             if(t.getNextRemainder()!=null && t.getNextRemainder().isBefore(t.getDateOfTask()) && !t.getNextRemainder().isAfter(now)){
-                System.out.println("Sending email to"+t.getTaskName());
+
                 emailService.sendHtmlEmail(t.getCustomer().getEmail(),"Alert:-Remainder","Hello there remainder for ur task  Task Name:-  "+t.getTaskName());
                updateNextReminder(t);
             }
