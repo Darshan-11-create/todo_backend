@@ -14,7 +14,6 @@ Live demo → [https://darshan-11-create.github.io/todo-app/](https://darshan-11
 | Framework | Spring Boot 3.2.5 |
 | Database | MySQL |
 | ORM | Spring Data JPA |
-| Email | SendGrid |
 | Build Tool | Maven |
 | Containerisation | Docker |
 
@@ -25,7 +24,6 @@ Live demo → [https://darshan-11-create.github.io/todo-app/](https://darshan-11
 - Create, read, update, and delete tasks via RESTful APIs
 - Mark tasks as complete / incomplete
 - Input validation and structured exception handling
-- Email notifications via SendGrid integration
 - Dockerised for easy deployment
 
 ---
@@ -50,7 +48,6 @@ src/
         ├── repository/    # JPA repositories
         └── model/         # Entity classes
 ```
-
 ---
 
 ## Author
